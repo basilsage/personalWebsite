@@ -10,7 +10,9 @@ html, body { overflow-x: hidden !important; }
 
 .contactLinks {
   text-decoration: none;
-  color: white
+  color: white;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: gray;
 }
 
 body {
