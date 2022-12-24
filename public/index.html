@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="DJ's personal website."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>DJ Satoda</title>
+    <style>
+      body {
+        background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="aboutMe" class="desktopIcon">
+      <div id="mydivheader">
+        <a href="./aboutMe.html">
+          <img id="txtImage" src="img/text.png">
+        </a>        
+        <p>aboutMe.txt</p>
+      </div>
+    </div>
+
+    <div id="myWriting" class="desktopIcon">
+      <div id="mydivheader">
+        <a href="https://medium.com/@dj.satoda">
+          <img src="img/file.png">
+        </a>        
+        <p>     myWriting</p>
+      </div>
+    </div>
+
+    <div id="importantImage" class="desktopIcon">
+      <div id="mydivheader">
+        <a href="https://i.pinimg.com/564x/ef/59/0d/ef590d3e2990e6827d96ad8ce55a755b.jpg">
+          <img id="txtImage" src="img/text.png">
+        </a>        
+        <p>important.jpg</p>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+    <div class="myFooter">
+      <p> <a class="contactLinks" href="mailto:dj.satoda@gmail.com">Email</a> | <a class="contactLinks" href="https://www.linkedin.com/in/djsatoda/">LinkedIn</a></p>
+    </div>
+
+
+    <!-- Script to make aboutMe element draggable -->
+    
+    <!-- <script>
+
+    let drag = false;
+
+    document.getElementById("aboutMe").addEventListener('mousedown', () => drag = false);  
+    document.getElementById("aboutMe").addEventListener('mousemove', () => drag = true);
+      
+    // On mouseUp, conditional action based on drag variable value
+    
+    document.getElementById("aboutMe").addEventListener(
+      'mouseup', () => {
+        console.log(drag ? 'drag' : 'click');
+        if (drag) {
+          // alert("drag")
+        } else {
+          window.open("/aboutMe.html", "_self");
+        }
+    })    
+
+    // Make the DIV element draggable:
+
+    dragElement(document.getElementById("aboutMe"));
+
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      elmnt.onmousedown = dragMouseDown;
+
+      // Below is legacy from header...  need to remove that CSS
+
+      // if (document.getElementById(elmnt.id + "header")) {
+      //   // if present, the header is where you move the DIV from:
+      //   // document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      // } else {
+      //   // otherwise, move the DIV from anywhere inside the DIV:
+        
+      // }
+
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+
+      function elementDrag(e) {
+
+        e = e || window.event;
+        e.preventDefault();
+
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+
+      function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+    </script> -->
+  </body>
+</html>
